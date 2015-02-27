@@ -1,3 +1,3 @@
-module UucsClient
+class UucsClient
   VERSION = "0.1.0"
 end

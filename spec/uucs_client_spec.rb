@@ -5,7 +5,10 @@ describe UucsClient do
     expect(UucsClient::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'can get a token and uri' do
+    uut = UucsClient.new 'localhost', '8080'
+    answer = uut.get_token_and_uri 'test.zip'
+    expect(answer['token'].length).to eq(20)
+    expect(answer['uri']).not_to be nil
   end
 end
