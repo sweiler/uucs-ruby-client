@@ -9,9 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Simon Weiler"]
   spec.email         = ["mail@simon-weiler.de"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
 
   spec.summary       = "This is the official ruby client for the uucs - user uploaded content server."
   spec.homepage      = "https://github.com/sweiler/uucs-ruby-client"
